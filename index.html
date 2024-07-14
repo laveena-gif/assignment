@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS */
+        .card {
+            display: inline-block; /* Change to inline-block */
+            width: 12%;
+            height: 75px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="text-container">
+            <h1 class="h1">AWARD WINNING</h1>
+            <h2 class="h2">DIGITAL MARKETING AGENCY</h2>
+            <p class="p">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+            <button id="contactUsButton">Contact Us</button>
+        </div>
+        <div class="image-container">
+            <img src="image.png" alt="Digital Marketing">
+        </div>
+    </header>
+
+    <section id="contactFormPopup" class="popup">
+        <form id="contactForm" action="https://getform.io/f/ayvpvwyb" method="POST">
+            <h2>Talk to us</h2>
+            <label for="work_email">Work email</label>
+            <input type="email" id="work_email" name="work_email" required>
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+            </div>
+            <button type="submit">Contact Us</button>
+        </form>
+    </section>
+
+    <section id="whatWeDo">
+        <h2 class="what-we-do">What We Do</h2>
+        <h3>SERVICES PROVIDE FOR YOU</h3>
+        <p>Morbi sed lacus neo risus finibus fougiat et fermentum nibh.</p><br><br>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide" data-url="https://www.fylehq.com">
+                    <img src="image1.png" alt="Image 1">
+                </div>
+                <div class="slide" data-url="https://www.fylehq.com">
+                    <img src="image2.png" alt="Image 2">
+                </div>
+                <div class="slide" data-url="https://www.fylehq.com">
+                    <img src="image4.png" alt="Image 4">
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-project">
+        <h3 class="our-project-heading">OUR PROJECT</h3>
+        <h2 class="why-we-are-best">WHY WE ARE BEST</h2>
+        <div class="image-content-container">
+            <div class="image-carousel">
+                <img id="projectImage" src="project1.png" alt="Project Image">
+            </div>
+            <div class="content">
+                <div class="content-item" data-image="project1.jpg">
+                    <p class="content-title">Genderless Kei - Japan's Hot</p>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="content-item" data-image="project2.png">
+                    <p class="content-title">Better Strategy & Quality</p>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="content-item" data-image="project3.jpg">
+                    <p class="content-title">Genderless Kei - Japans's Hote</p>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="companyGrowth">
+        <h3 class="experts">EXPERTS</h3>
+        <h2 class="our-company-growth">OUR COMPANY GROWTH</h2>
+        <div class="card" id="satisfiedCustomers">
+            <img src="199.png" alt="Small Image 4">
+            <p>Satisfied Customers</p>
+        </div>
+        <div class="card" id="daysOfOperation">
+            <img src="1591.png" alt="Small Image 5">
+            <p>Days of Operation</p>
+        </div>
+        <div class="card" id="completedProjects">
+            <img src="283.png" alt="Small Image 6">
+            <p>Completed Projects</p>
+        </div>
+        <div class="card" id="awardsWon">
+            <img src="75.png" alt="Small Image 7">
+            <p>Awards Won</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

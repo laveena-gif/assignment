@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.h1 {
+    font-size: 20px;
+    color: red;  
+}
+
+.h2 {
+    font-size: 32px;
+}
+
+.p {
+    padding-bottom: 17px;
+}
+
+.what-we-do {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 100%;
+}
+
+.image-container img {
+    max-width: 105%;
+    height: 475px;
+}
+
+button:hover {
+    background-color: #ff1717;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.what-we-do{
+    font-size: 20px;
+}
+
+#whatWeDo {
+    margin: 40px 0;
+}
+
+#whatWeDo h3 {
+    font-size: 32px;
+    display: inline;
+}
+
+#whatWeDo p {
+    font-size: 17px;
+    display: inline;
+    margin-left: 75px; 
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.7s ease;
+}
+
+.slide {
+    min-width: 25%; 
+    margin-right: 45px; 
+    transition: 0.5s;
+    position: relative;
+}
+
+.slide img {
+    width: 105%;
+    height: 455px; 
+    display: block;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    display: inline-block;
+    width: 5px; 
+    height: 5px; 
+    margin: 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+.our-project {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.our-project-heading {
+    font-size: 20px;
+    color: red;
+}
+
+.why-we-are-best {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.image-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-carousel {
+    width: 50%;
+}
+
+.image-carousel img {
+    width: 75%;
+    height: auto;
+    display: block;
+}
+
+.content-title{
+    font-size: 17px;
+}
+
+.content {
+    width: 35%;
+    padding: 15px;
+}
+
+.content-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 7px;
+    border: 1px solid #e0eaf5;
+    background-color:#ecf3f9 ;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.content-item:hover {
+    background-color: red;
+    color: white;
+}
+
+#companyGrowth {
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 12%;
+    height: 75px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.card img {
+    width: 55%;
+    height: 55%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content:space-between;
+}
+
+.contact-form {
+    width: 45%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.experts {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.our-company-growth {
+    font-size: 27px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #fa1111;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.read-more-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 100%;
+    background-color: rgb(235, 34, 67);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.read-more-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
